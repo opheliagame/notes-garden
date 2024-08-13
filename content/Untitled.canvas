@@ -1,0 +1,12 @@
+{
+	"nodes":[
+		{"id":"2e42d981d279be29","x":-180,"y":100,"width":250,"height":60,"type":"text","text":"casual archiving"},
+		{"id":"76938644146845f2","x":-220,"y":-200,"width":250,"height":60,"type":"text","text":"Alternative families"},
+		{"id":"18756e6b39fb0a85","x":-345,"y":280,"width":250,"height":60,"type":"text","text":"unstructured data"},
+		{"id":"724e304cb92be9c8","x":-520,"y":0,"width":250,"height":50,"type":"text","text":"WIMB"}
+	],
+	"edges":[
+		{"id":"a0c21c0c9e93bcb2","fromNode":"2e42d981d279be29","fromSide":"left","toNode":"724e304cb92be9c8","toSide":"bottom"},
+		{"id":"a680cea92b1553b3","fromNode":"2e42d981d279be29","fromSide":"top","toNode":"76938644146845f2","toSide":"bottom"}
+	]
+}
