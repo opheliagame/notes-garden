@@ -1,5 +1,5 @@
 ---
-dg-publish: true
+dg-publish: false
 ---
 ## daily entries 
 - [[day 1]]

@@ -1,5 +1,5 @@
 ---
-dg-publish: true
+dg-publish: false
 ---
 Today started with Quantum Country and then I moved on to the videos for today. And I have to say that combining both of these resources has been interesting but I am also realising that it seems like I am making more steady progress with Quantum Country rather than the videos.
 

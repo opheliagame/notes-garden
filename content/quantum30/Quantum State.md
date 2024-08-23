@@ -1,5 +1,5 @@
 ---
-dg-publish: true
+dg-publish: false
 ---
 The state of a [[qubit]] is a vector of unit length in 2D complex vector space called state space
 

@@ -1,5 +1,5 @@
 ---
-dg-publish: true
+dg-publish: false
 ---
 I started to read [Quantum Country](https://quantum.country/) today. I think it is a much better resource for me compared to watching videos. It is also quite an interesting approach to learning so I am looking forward to progressing with it. 
 

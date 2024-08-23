@@ -1,5 +1,5 @@
 ---
-dg-publish: true
+dg-publish: false
 ---
 The simplest quantum circuit is the Quantum Wire
 

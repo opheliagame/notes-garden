@@ -1,0 +1,18 @@
+{
+	"nodes":[
+		{"id":"4415bffc0a40e4e2","x":-482,"y":-380,"width":364,"height":205,"type":"file","file":"assets/Pasted image 20240821164447.png"},
+		{"id":"ed8944a2be039e93","x":-482,"y":180,"width":200,"height":280,"type":"file","file":"assets/Pasted image 20240821164437.png"},
+		{"id":"cf9d3eb63b6ecd85","x":-180,"y":-57,"width":250,"height":60,"type":"text","text":"Sridhar Rangayan"},
+		{"id":"93dfd24f854c65f4","x":-20,"y":85,"width":250,"height":58,"type":"text","text":"Industrial Design Centre IDC, School of Design"},
+		{"id":"d40f5894c687352a","x":-482,"y":-139,"width":220,"height":285,"type":"file","file":"assets/Pasted image 20240821164424.png"},
+		{"id":"d4fdd369cca4437e","x":320,"y":-380,"width":215,"height":285,"type":"file","file":"assets/Pasted image 20240821164816.png"},
+		{"id":"3114c9f8c67113e2","x":565,"y":-380,"width":220,"height":285,"type":"file","file":"assets/Pasted image 20240821164836.png"},
+		{"id":"0d2b0656c2557bd2","x":820,"y":-380,"width":217,"height":290,"type":"file","file":"assets/Pasted image 20240821165221.png"},
+		{"id":"690050c407dd8a8a","x":-35,"y":-550,"width":250,"height":60,"type":"text","text":"in 1990s, cruising to meet people "}
+	],
+	"edges":[
+		{"id":"caa2402795e8bffc","fromNode":"93dfd24f854c65f4","fromSide":"top","toNode":"cf9d3eb63b6ecd85","toSide":"bottom"},
+		{"id":"edec0d0ef560a0d9","fromNode":"cf9d3eb63b6ecd85","fromSide":"top","toNode":"d40f5894c687352a","toSide":"right"},
+		{"id":"cbc7ad4ba5d1cf12","fromNode":"cf9d3eb63b6ecd85","fromSide":"top","toNode":"690050c407dd8a8a","toSide":"bottom"}
+	]
+}

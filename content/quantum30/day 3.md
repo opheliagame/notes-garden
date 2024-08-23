@@ -1,5 +1,5 @@
 ---
-dg-publish: true
+dg-publish: false
 ---
 I was planning to make some progress with Quantum Country today as well but then I got hit with some biology happening in my uterus so could not proceed. But here are a few observations from today
 

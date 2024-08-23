@@ -1,5 +1,5 @@
 ---
-dg-publish: true
+dg-publish: false
 ---
 Today will be the first day of this one month long learning challenge. 
 Initially I had thought of using substack for publishing my daily learning notes, but obsidian seems like a much better idea for further refinement and continued learning. 

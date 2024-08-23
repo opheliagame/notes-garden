@@ -1,5 +1,5 @@
 ---
-dg-publish: true
+dg-publish: false
 ---
 Today's videos were quite low on information. And since I am already continuing with Quantum Country, a lot of the information that was delivered, I already knew. 
 
