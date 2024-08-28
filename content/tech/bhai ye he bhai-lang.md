@@ -1,6 +1,13 @@
+*an exercise in critical code studies*
+
+
+
+
+
+
+# References
 
 a toy programming language 
-
 https://github.com/DulLabs/bhai-lang
 https://github.com/DulLabs/bhai-lang/blob/develop/packages/parser/src/constants/bhaiLangSpec.ts
 
