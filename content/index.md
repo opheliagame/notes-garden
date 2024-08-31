@@ -5,6 +5,8 @@ title: thoughts and writing
 ---
 recently I have been thinking about 
 
+[[queer typing]]
+
 [[non-narrative storytelling]] 
 
 [[non linear storytelling]]

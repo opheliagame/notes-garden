@@ -31,8 +31,6 @@ export function createProcessor(ctx: BuildCtx): QuartzProcessor {
       )
       // MD AST -> HTML AST
       .use(remarkRehype, { allowDangerousHtml: true })
-      // TODO : styling external images inside a tag
-      .use(remarkUnwrapImages)
       // HTML AST -> HTML AST transforms
       .use(transformers.filter((p) => p.htmlPlugins).flatMap((plugin) => plugin.htmlPlugins!(ctx)))
   )
