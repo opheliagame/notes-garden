@@ -14,6 +14,7 @@ import path from "path"
 import { visit } from "unist-util-visit"
 import isAbsoluteUrl from "is-absolute-url"
 import { Root } from "hast"
+import remarkReferenceLinks from "remark-reference-links"
 
 interface Options {
   /** How to resolve Markdown paths */
@@ -37,6 +38,9 @@ export const CrawlLinks: QuartzTransformerPlugin<Partial<Options> | undefined> =
   const opts = { ...defaultOptions, ...userOpts }
   return {
     name: "LinkProcessing",
+    markdownPlugins(ctx) {
+      return [remarkReferenceLinks]
+    },
     htmlPlugins(ctx) {
       return [
         () => {

@@ -8,7 +8,8 @@
 		{"id":"d4fdd369cca4437e","type":"file","file":"assets/Pasted image 20240821164816.png","x":320,"y":-380,"width":215,"height":285},
 		{"id":"3114c9f8c67113e2","type":"file","file":"assets/Pasted image 20240821164836.png","x":565,"y":-380,"width":220,"height":285},
 		{"id":"0d2b0656c2557bd2","type":"file","file":"assets/Pasted image 20240821165221.png","x":820,"y":-380,"width":217,"height":290},
-		{"id":"690050c407dd8a8a","type":"text","text":"in 1990s, cruising to meet people ","x":-35,"y":-550,"width":250,"height":60}
+		{"id":"690050c407dd8a8a","type":"text","text":"in 1990s, cruising to meet people ","x":-35,"y":-550,"width":250,"height":60},
+		{"id":"d108a0df0a5b4654","type":"file","file":"assets/Pasted image 20240901114939.png","x":320,"y":143,"width":308,"height":400}
 	],
 	"edges":[
 		{"id":"caa2402795e8bffc","fromNode":"93dfd24f854c65f4","fromSide":"top","toNode":"cf9d3eb63b6ecd85","toSide":"bottom"},

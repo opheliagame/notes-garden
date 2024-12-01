@@ -13,7 +13,8 @@ import workerpool, { Promise as WorkerPromise } from "workerpool"
 import { QuartzLogger } from "../util/log"
 import { trace } from "../util/trace"
 import { BuildCtx } from "../util/ctx"
-import remarkUnwrapImages from "remark-unwrap-images"
+import remarkReferenceLinks from "remark-reference-links"
+import remarkStringify from "remark-stringify"
 
 export type QuartzProcessor = Processor<MDRoot, MDRoot, HTMLRoot>
 export function createProcessor(ctx: BuildCtx): QuartzProcessor {
@@ -23,16 +24,24 @@ export function createProcessor(ctx: BuildCtx): QuartzProcessor {
     unified()
       // base Markdown -> MD AST
       .use(remarkParse)
+      // .use(remarkReferenceLinks)
+      
+
       // MD AST -> MD AST transforms
       .use(
         transformers
           .filter((p) => p.markdownPlugins)
           .flatMap((plugin) => plugin.markdownPlugins!(ctx)),
       )
+      // .use(remarkReferenceLinks)
+
       // MD AST -> HTML AST
       .use(remarkRehype, { allowDangerousHtml: true })
       // HTML AST -> HTML AST transforms
       .use(transformers.filter((p) => p.htmlPlugins).flatMap((plugin) => plugin.htmlPlugins!(ctx)))
+      
+      
+      
   )
 }
 
@@ -97,8 +106,14 @@ export function createFileParser(ctx: BuildCtx, fps: FilePath[]) {
         file.data.slug = slugifyFilePath(file.data.relativePath)
 
         const ast = processor.parse(file)
+        // const newAst = await unified()
+        //   .use(remarkParse)
+        //   .use(remarkReferenceLinks)
+        //   .use(remarkRehype, { allowDangerousHtml: true })
+        //   .run(ast, file)
         const newAst = await processor.run(ast, file)
         res.push([newAst, file])
+        console.log(newAst)
 
         if (argv.verbose) {
           console.log(`[process] ${fp} -> ${file.data.slug} (${perf.timeSince()})`)
@@ -130,6 +145,20 @@ export async function parseMarkdown(ctx: BuildCtx, fps: FilePath[]): Promise<Pro
       const processor = createProcessor(ctx)
       const parse = createFileParser(ctx, fps)
       res = await parse(processor)
+      
+
+      const ast = await unified()
+        .use(remarkParse)
+        .use(remarkReferenceLinks)
+        .parse(await read('example.md'))
+
+      const res2 = await unified()
+      .use(remarkParse)
+      .use(remarkReferenceLinks)
+      .run(ast, await read('example.md'))
+
+      console.log("here!!")
+      console.log(res2)
     } catch (error) {
       log.end()
       throw error
