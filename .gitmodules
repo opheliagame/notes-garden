@@ -1,0 +1,3 @@
+[submodule "public-notes"]
+	path = content
+	url = https://github.com/opheliagame/public-notes
